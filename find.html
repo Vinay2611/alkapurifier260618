@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Ruddy Website Template | Home :: w3layouts</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery.corner.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!---- animated-css ---->
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!---- start-smoth-scrolling---->
+    <!----webfonts--->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!----start-top-nav-script---->
+    <script>
+        $(function() {
+            var pull 		= $('#pull');
+            menu 		= $('nav ul');
+            menuHeight	= menu.height();
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!----//End-top-nav-script---->
+</head>
+<body>
+
+<div class="bgg" style="background: #75c3a5;">
+    <!----- start-header---->
+    <div class="container">
+        <div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="index.html">Ruddy</a>
+                </div>
+                <!----start-top-nav---->
+                <nav class="top-nav">
+                    <ul class="top-nav">
+                        <li><a href="#about" class="scroll">about</a></li>
+                        <li><a href="#process" class="scroll">process</a></li>
+                        <!--<li><a href="#port" class="scroll">portfolio</a></li>-->
+                        <li class="page-scroll"><a href="#contact" class="scroll">contact</a></li>
+                        <li class="active-join" class="page-scroll"><a href="#team" class="scroll">franchise</a></li>
+                    </ul>
+                    <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+                </nav>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $height=$(".bgg").height();
+            console.log($height);
+            $(".sm-slider").height($height);
+        });
+    </script>
+
+    <div class="clearfix"> </div>
+</div>
+
+
+<br>
+<br>
+
+<div class="container">
+    <div class="head-section">
+        <div class="container">
+            <h3><span>Find</span><label>franchise</label></h3>
+        </div>
+    </div>
+    <br>
+    <div class="col-lg-12 form-horizontal">
+        <form>
+            <div class="col-lg-3">
+                <label class="">Select Country</label>
+                <select name="Country" class="form-control">
+                    <option>Country1</option>
+                    <option>Country2</option>
+                    <option>Country3</option>
+                    <option>Country4</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <label class="">Select State</label>
+                <select name="Country" class="form-control">
+                    <option>State1</option>
+                    <option>State2</option>
+                    <option>State3</option>
+                    <option>State4</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <label class="">Select City</label>
+                <select name="Country" class="form-control">
+                    <option>City1</option>
+                    <option>City2</option>
+                    <option>City3</option>
+                    <option>City4</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <label class="">&nbsp;</label><br>
+                <input type="submit" value="Search" class="btn btn-success">
+            </div>
+        </form>
+    </div>
+    <div class="clearfix"></div>
+    <br>
+
+    <div class="head-section">
+        <div class="container">
+            <h3><span>Franchise</span><label>list</label></h3>
+        </div>
+    </div>
+    <div class="franchiseList">
+        <div class="franchise-box">
+            <div class="blog-grid-left-big-info">
+                <div class="blog-art-info">
+                    <h3><a href="#">Franchise1</a></h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="franchise-box">
+            <div class="blog-grid-left-big-info">
+                <div class="blog-art-info">
+                    <h3><a href="#">Franchise2</a></h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="franchise-box">
+            <div class="blog-grid-left-big-info">
+                <div class="blog-art-info">
+                    <h3><a href="#">Franchise3</a></h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="franchise-box">
+            <div class="blog-grid-left-big-info">
+                <div class="blog-art-info">
+                    <h3><a href="#">Franchise4</a></h3>
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .blog-grid-left-big-info {
+            float: left;
+            width: 100%;
+            background: #f5f5f5;
+            box-shadow: 3px 3px 6px 0px #e1e6e4;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</div>
+<br>
+<br>
+
+<!---- footer --->
+<div class="footer text-center">
+    <div class="container">
+        <div class="footer-inner wow zoomIn" data-wow-delay="0.3s">
+            <ul>
+                <li><a href="#"><img src="images/footer-logo.png" title="ruddy" /></a></li>
+                <li><a class="contact-me" href="#">contact us</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                 var defaults = {
+                 containerID: 'toTop', // fading element id
+                 containerHoverID: 'toTopHover', // fading element hover id
+                 scrollSpeed: 1200,
+                 easingType: 'linear'
+                 };
+                 */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+</div>
+<!---- footer --->
+</body>
+</html>
+

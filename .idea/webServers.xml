@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ade4dbc7-e526-47e0-94f6-97030b8cbefe" name="alkaenergy" url="http://ftp.alkaenergy.in">
+        <fileTransfer host="ftp.alkaenergy.in" port="21" password="dfc6dfcbdfdedfcfdfd9dfdedfeadf9bdf98df99" username="dsvinfo@alkaenergy.in">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
